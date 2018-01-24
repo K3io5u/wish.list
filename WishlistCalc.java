@@ -27,26 +27,26 @@ public class WishlistCalc extends WishlistMain {
         moneyBank=WishlistInitial.money_bank;//how much you have, delcared by the global variable
 
         System.out.println("You are saving up for " + itemName + ", correct? (yes/no)");
-        confirm=input.nextLine();
+        confirm=input.nextLine();//confirmation to make sure the user is calculating for the right item
 
         if (confirm.equals("yes")) {
             System.out.println();
 
-            System.out.println("Great! And so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
+            System.out.println("Great! And so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");//restating how much money the user has and how much more they need for the item
 
             System.out.println();
 
             System.out.println("Could you start by stating whether you get paid weekly or bi-weekly?");
-            payRate=input.nextLine();
+            payRate=input.nextLine();//taking the input for the user's pay rate
 
             if (payRate.equals("weekly")) {
 
                 System.out.println("Okay and how much do you make per week?");
-                income=input.nextDouble();
+                income=input.nextDouble();//taking the input for how much the user makes every week
 
                 System.out.println("Okay so if you make " + income + " dollars a week, and you need " + moneyNeed + ". Then we can calculate how long you still have to save for.");
 
-                weeksTill=(moneyNeed/income);
+                weeksTill=(moneyNeed/income);//calculating how many weeks it takes till the user can get the item
 
                 System.out.println();
 
@@ -55,11 +55,11 @@ public class WishlistCalc extends WishlistMain {
             else if (payRate.equals("bi-weekly")) {
 
                 System.out.println("Okay and how much do you make every 2 weeks?");
-                income=input.nextDouble();
+                income=input.nextDouble();//taking the input for how much the user makes every two weeks
 
                 System.out.println("Okay so if you make " + income + " dollars every 2 weeks, and you need " + moneyNeed + ". " + "Then we can calculate how long you still have to save for.");
 
-                weeksTill=(moneyNeed/income)/2;
+                weeksTill=(moneyNeed/income)/2;//calculating how many weeks it takes till the user can get the item
 
                 System.out.println();
 
