@@ -15,6 +15,7 @@ public class WishlistMain {
         String itemName, dataAgree, calcAgree;
 
         Scanner input = new Scanner(System.in);
+        Scanner reader = new Scanner(WishlistDatabase.file_name);
 
         WishlistInitial main = new WishlistInitial();//creates an object within the main method to call other methods from the WishlistInitial Class
         main.Welcome();//calls the Welcome method
@@ -81,6 +82,7 @@ public class WishlistMain {
         }
 
         input.close();
+        reader.close();
     }
 
 }
