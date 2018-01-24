@@ -24,7 +24,7 @@ public class WishlistCalc extends WishlistMain {
 
         moneyNeed=WishlistInitial.money_need;//how much it is, delcared by the global variable
 
-        moneyBank=WishlistInitial.money_bank;//how much you have, delcared by the global variable
+        moneyBank=WishlistBank.money_bank;//how much you have, delcared by the global variable
 
         System.out.println("You are saving up for " + itemName + ", correct? (yes/no)");
         confirm=input.nextLine();//confirmation to make sure the user is calculating for the right item

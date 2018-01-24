@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class WishlistInitial extends WishlistMain {
     public static String item_name; //public variable for what the user wants
-    public static double money_bank; //public variable for how much money the user has
     public static double item_cost; //public variable for how much the item costs
 
     public WishlistInitial() {
@@ -47,20 +46,6 @@ public class WishlistInitial extends WishlistMain {
         item_cost=itemCost;
 
         return itemCost;
-    }
-
-    public double MoneyBank(Scanner input) {
-
-        //public method to store how much money the user has saved
-
-        double moneyBank;
-
-        System.out.println("Enter the amount of money you have saved: ");
-        moneyBank=input.nextDouble();
-
-        money_bank=moneyBank;
-
-        return moneyBank;
     }
 
 }
