@@ -69,10 +69,11 @@ public class WishlistDatabase extends WishlistMain {
                 out.println(itemName2);
                 out.println(itemCost2);
 
-                
+
             }
             else if (confirm2.equals("no")) {
-
+                System.out.println();
+                System.out.println("");
             }
         }
         else if (confirm1.equals("no")) {
