@@ -5,9 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
 public class WishlistDatabase extends WishlistMain {
-    public static String item_name1, item_name2, item_name3;
-    public static double item_cost1, item_cost2, item_cost3;
-    public static String file_name;
+    public static String file_name;//public variable for the name of the user's file
 
     public WishlistDatabase() {
         super();
@@ -68,9 +66,6 @@ public class WishlistDatabase extends WishlistMain {
 
             System.out.println("Item Stored in " + fileName);
 
-            item_name1=itemName1;//sets the global variable item_name1 equal to the local variable itemName1
-            item_cost1=itemCost1;//sets the global variable item_cost1 equal to the local variable itemCost1
-
             System.out.println();
             System.out.println("Would you like to store another item? (yes/no)");
             confirm2=input.next();//asks the user if they would like to store another item
@@ -87,9 +82,6 @@ public class WishlistDatabase extends WishlistMain {
 
                 System.out.println("Item Stored in " + fileName);
 
-                item_name2=itemName2;//sets the global variable item_name2 equal to the local variable itemName2
-                item_cost2=itemCost2;//sets the global variable item_cost2 equal to the local variable itemCost2
-
                 System.out.println("Would you like to store another item? (yes/no)");
                 confirm3=input.next();//asks the user if they would like to store another item
 
@@ -104,9 +96,6 @@ public class WishlistDatabase extends WishlistMain {
                     out.println(itemCost3);//stores the third itemCost to file
 
                     System.out.println("Item Stored in " + fileName);
-
-                    item_name3=itemName3;//sets the global variable item_name3 to the local variable itemName3
-                    item_cost3=itemCost3;//sets the global variable item_cost3 to the local variable itemCost3
 
                     System.out.println("Okay! That is all the items that can be stored at this time.");
                     System.out.println();
