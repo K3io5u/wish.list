@@ -36,7 +36,6 @@ public class WishlistMain {
 
                 WishlistCalc2 two = new WishlistCalc2();
                 two.Calc2();
-                //TODO Make it so you can go through WishlistCalc2 from the WishlistAccess method and items in the user file
             }
             else if (dataBase.equals("no")) {
                 System.out.println();

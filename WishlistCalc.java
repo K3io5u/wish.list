@@ -31,38 +31,36 @@ public class WishlistCalc extends WishlistMain {
 
         if (confirm.equals("yes")) {
             System.out.println();
-
-            System.out.println("Great! And so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");//restating how much money the user has and how much more they need for the item
-
-            System.out.println();
+            System.out.println("Great! And so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
+            System.out.println();////restating how much money the user has and how much more they need for the item
 
             System.out.println("Could you start by stating whether you get paid weekly or bi-weekly?");
-            payRate=input.nextLine();//taking the input for the user's pay rate
+            payRate=input.next();//taking the input for the user's pay rate
 
             if (payRate.equals("weekly")) {
-
                 System.out.println("Okay and how much do you make per week?");
                 income=input.nextDouble();//taking the input for how much the user makes every week
 
                 System.out.println("Okay so if you make " + income + " dollars a week, and you need " + moneyNeed + ". Then we can calculate how long you still have to save for.");
 
                 weeksTill=(moneyNeed/income);//calculating how many weeks it takes till the user can get the item
+                System.out.println("Calculating...");
 
                 System.out.println();
-
                 System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
+                System.out.println();
+                System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
             }
             else if (payRate.equals("bi-weekly")) {
-
                 System.out.println("Okay and how much do you make every 2 weeks?");
                 income=input.nextDouble();//taking the input for how much the user makes every two weeks
 
                 System.out.println("Okay so if you make " + income + " dollars every 2 weeks, and you need " + moneyNeed + ". " + "Then we can calculate how long you still have to save for.");
 
                 weeksTill=(moneyNeed/income)/2;//calculating how many weeks it takes till the user can get the item
+                System.out.println("Calculating...");
 
                 System.out.println();
-
                 System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
                 System.out.println();
                 System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
