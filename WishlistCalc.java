@@ -71,10 +71,14 @@ public class WishlistCalc extends WishlistMain {
             else {
                 System.out.println();
                 System.out.println("I'm sorry I can't understand what you entered. Goodbye.");
+
+                System.exit(0);
             }
         }
         else if (confirm.equals("no")) {
             System.out.println("Okay, please utilize the Intial Wishlist Application in order to continue with this program. " + "\nIf the wrong item showed up please redo the input in the Intial Wishlist Application.");
+
+            System.exit(0);
         }
 
         input.close();

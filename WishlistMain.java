@@ -27,6 +27,16 @@ public class WishlistMain {
             if (dataBase.equals("yes")) {
                 WishlistAccess file = new WishlistAccess();//creats an object within the main method to call the method from the WishlistAccess Class
                 file.Access();//calls the Access method
+
+                System.out.println();
+                System.out.println("Now that you have accessed your file and its items you will be transferred to the Access Calculator to choose the item you wish to calculate.");
+                System.out.println();
+                System.out.println("Transferring now.. Thank you!");
+                System.out.println();
+
+                WishlistCalc2 two = new WishlistCalc2();
+                two.Calc2();
+                //TODO Make it so you can go through WishlistCalc2 from the WishlistAccess method and items in the user file
             }
             else if (dataBase.equals("no")) {
                 System.out.println();
