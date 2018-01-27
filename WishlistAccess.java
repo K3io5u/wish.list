@@ -40,7 +40,7 @@ public class WishlistAccess extends WishlistMain {
         item_name1 = itemName1;
         item_cost1 = itemCost1;
 
-        //TODO make it so the scanner can read for more than just one item
+        //TODO make it so the scanner can read for more than just one item and finish class setup
 
         scnr.close();
     }

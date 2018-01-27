@@ -44,6 +44,7 @@ public class WishlistCalc extends WishlistMain {
                 System.out.println("Okay so if you make " + income + " dollars a week, and you need " + moneyNeed + ". Then we can calculate how long you still have to save for.");
 
                 weeksTill=(moneyNeed/income);//calculating how many weeks it takes till the user can get the item
+                System.out.println();
                 System.out.println("Calculating...");
 
                 System.out.println();
@@ -58,13 +59,13 @@ public class WishlistCalc extends WishlistMain {
                 System.out.println("Okay so if you make " + income + " dollars every 2 weeks, and you need " + moneyNeed + ". " + "Then we can calculate how long you still have to save for.");
 
                 weeksTill=(moneyNeed/income)/2;//calculating how many weeks it takes till the user can get the item
+                System.out.println();
                 System.out.println("Calculating...");
 
                 System.out.println();
                 System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
                 System.out.println();
                 System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
-
             }
             else {
                 System.out.println();

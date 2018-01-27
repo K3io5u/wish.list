@@ -92,7 +92,7 @@ public class WishlistMain {
 
                 System.out.println();
                 System.out.println("Would you like to store this item and maybe other items in this app to use and look up again? (yes/no)");
-                dataAgree = input.next();//asks the user whether or not they want to access the WishlistDatabase class and use its assests
+                dataAgree = input.nextLine();//asks the user whether or not they want to access the WishlistDatabase class and use its assests
 
                 if (dataAgree.equals("yes")) {
                     System.out.println();
