@@ -53,7 +53,7 @@ public class WishlistCalc2 extends WishlistMain {
 
 			if (payRate.equals("weekly")) {
 				System.out.println("Okay and how much do you make per week?");
-				income = Double.parseDouble(in.nextLine());//taking the input for how much the user makes every week
+				income = in.nextDouble();//taking the input for how much the user makes every week
 
 				System.out.println("Okay so if you make " + income + " dollars a week, and you need " + moneyNeed + ". Then we can calculate how long you still have to save for.");
 				System.out.println();
@@ -67,7 +67,7 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
 			} else if (payRate.equals("bi-weekly")) {
 				System.out.println("Okay and how much do you make every 2 weeks?");
-				income = Double.parseDouble(in.nextLine());//taking the input for how much the user makes every two weeks
+				income = in.nextDouble();//taking the input for how much the user makes every two weeks
 
 				System.out.println("Okay so if you make " + income + " dollars every 2 weeks, and you need " + moneyNeed + ". " + "Then we can calculate how long you still have to save for.");
 

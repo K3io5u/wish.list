@@ -104,6 +104,10 @@ public class WishlistMain {
                         System.out.println("Okay, you are welcome to utilize it anytime! Thank you for using Wishlist!");
                     }
                 }
+                else {
+				    System.out.println();
+				    System.out.println("Thank you for using Wishlist!");
+                }
 			}
 
 			input.close();
