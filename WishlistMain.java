@@ -76,18 +76,20 @@ public class WishlistMain {
 
 						WishlistCalc math = new WishlistCalc();
 						math.Calc();//calls the Calc method within the WishlistCalc class to be initialized
-					} else if (calcAgree.equals("no")) {
+					}
+					else if (calcAgree.equals("no")) {
 						System.out.println();
 						System.out.println("Okay, you are welcome to utilize it anytime! Thank you for using Wishlist!");
 					}
-				} else {
+				}
+				else {
 					System.out.println();
 					System.out.println("You have enough money to get " + itemName + "!");
 					System.out.println();
 					System.out.println("Thank you for using and trying out Wishlist!");
 				}
 
-				if (input.hasNextLine()) {
+
                     System.out.println();
                     System.out.println("Would you like to store this item and maybe other items in this app to use and look up again? (yes/no)");
                     dataAgree = input.nextLine();//asks the user whether or not they want to access the WishlistDatabase class and use its assests
@@ -104,13 +106,9 @@ public class WishlistMain {
                         System.out.println("Okay, you are welcome to utilize it anytime! Thank you for using Wishlist!");
                     }
                 }
-                else {
-				    System.out.println();
-				    System.out.println("Thank you for using Wishlist!");
-                }
-			}
 
 			input.close();
+
 		} catch (FileNotFoundException ex) {
 			System.out.println("File could not be found.");
 			System.exit(0);

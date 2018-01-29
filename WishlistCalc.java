@@ -79,7 +79,6 @@ public class WishlistCalc extends WishlistMain {
 			System.exit(0);
 		}
 
-		input.close();
 	}
 
 }
