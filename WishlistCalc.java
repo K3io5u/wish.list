@@ -11,6 +11,8 @@ public class WishlistCalc extends WishlistMain {
 	public void Calc() {
 		//public method that holds all the calculations and prints for the WishlistCalc class
 
+        //TODO Adjust and add into class to account for monthly expenses and such
+
 		double income, weeksTill, moneyNeed, moneyBank;
 		String payRate, itemName, confirm;
 
@@ -78,7 +80,5 @@ public class WishlistCalc extends WishlistMain {
 
 			System.exit(0);
 		}
-
 	}
-
 }

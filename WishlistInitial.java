@@ -11,7 +11,6 @@ public class WishlistInitial extends WishlistMain {
 	}
 
 	public void Welcome() {
-
 		//public method for a greeting to the program
 
 		System.out.println("Welcome to Wishlist!");
@@ -20,7 +19,6 @@ public class WishlistInitial extends WishlistMain {
 	}
 
 	public String ItemName(Scanner input) {
-
 		//public method to store what the user wants to get
 
 		String itemName;
@@ -34,7 +32,6 @@ public class WishlistInitial extends WishlistMain {
 	}
 
 	public double ItemCost(Scanner input) {
-
 		//public method to store how much the item is
 
 		double itemCost;

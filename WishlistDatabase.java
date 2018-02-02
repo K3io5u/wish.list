@@ -12,6 +12,8 @@ public class WishlistDatabase extends WishlistMain {
 	}
 
 	public void Database() throws FileNotFoundException {
+		//TODO Account for and catch already existing file names
+
 		String itemName, itemName1, itemName2, itemName3;
 		double itemCost, itemCost1, itemCost2, itemCost3;
 		String confirm, confirm1, confirm2, confirm3;
@@ -34,7 +36,7 @@ public class WishlistDatabase extends WishlistMain {
 		itemCost = WishlistInitial.item_cost;//sets the local variable itemCost to the global variable item_cost
 
 		System.out.println("Would you like to store the initial item you started Wishlist with? (yes/no)");
-		confirm = input.next();//asks the user if they want their intial item stored
+		confirm = input.nextLine();//asks the user if they want their intial item stored
 
 		if (confirm.equals("yes")) {
 			out.println(itemName);//stores the original itemName to file
@@ -43,8 +45,7 @@ public class WishlistDatabase extends WishlistMain {
 			System.out.println("Item Stored in " + fileName);
 		} else if (confirm.equals("no")) {
 			System.out.println();
-			System.out.println(
-					"Okay, that item shall not be saved, you will be directed to the rest of the database now.");
+			System.out.println("Okay, that item shall not be saved, you will be directed to the rest of the database now.");
 		}
 
 		System.out.println();
@@ -68,7 +69,7 @@ public class WishlistDatabase extends WishlistMain {
 
 			System.out.println();
 			System.out.println("Would you like to store another item? (yes/no)");
-			confirm2 = input.next();//asks the user if they would like to store another item
+			confirm2 = input.nextLine();//asks the user if they would like to store another item
 
 			if (confirm2.equals("yes")) {
 				System.out.println();
@@ -99,8 +100,7 @@ public class WishlistDatabase extends WishlistMain {
 
 					System.out.println("Okay! That is all the items that can be stored at this time.");
 					System.out.println();
-					System.out.println("All of your items were stored under " + fileName
-							+ ".txt! Thank you very much for using Wishlist Database!");
+					System.out.println("All of your items were stored under " + fileName + ".txt! Thank you very much for using Wishlist Database!");
 				}
 			} else if (confirm2.equals("no")) {
 				System.out.println();

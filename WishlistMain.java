@@ -11,6 +11,8 @@ public class WishlistMain {
 	}
 
 	public static void main(String[] args) {
+        //TODO Finish commenting all present code in all classes
+
 		try {
 			double moneyBank, itemCost, moneyNeed;
 			String itemName, dataAgree, calcAgree;
@@ -89,7 +91,6 @@ public class WishlistMain {
 					System.out.println("Thank you for using and trying out Wishlist!");
 				}
 
-
                     System.out.println();
                     System.out.println("Would you like to store this item and maybe other items in this app to use and look up again? (yes/no)");
                     dataAgree = input.nextLine();//asks the user whether or not they want to access the WishlistDatabase class and use its assests
@@ -113,6 +114,5 @@ public class WishlistMain {
 			System.out.println("File could not be found.");
 			System.exit(0);
 		}
-
 	}
 }

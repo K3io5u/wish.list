@@ -10,7 +10,6 @@ public class WishlistBank extends WishlistMain {
 	}
 
 	public double MoneyBank(Scanner input) {
-
 		//public method to store how much money the user has saved
 
 		double moneyBank;
