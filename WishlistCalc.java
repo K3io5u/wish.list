@@ -53,7 +53,8 @@ public class WishlistCalc extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
-			} else if (payRate.equals("bi-weekly")) {
+			}
+			else if (payRate.equals("bi-weekly")) {
 				System.out.println("Okay and how much do you make every 2 weeks?");
 				income = Double.parseDouble(input.nextLine());//taking the input for how much the user makes every two weeks
 
@@ -69,13 +70,15 @@ public class WishlistCalc extends WishlistMain {
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
 
 
-			} else {
+			}
+			else {
 				System.out.println();
 				System.out.println("I'm sorry I can't understand what you entered. Goodbye.");
 
 				System.exit(0);
 			}
-		} else if (confirm.equals("no")) {
+		}
+		else if (confirm.equals("no")) {
 			System.out.println("Okay, please utilize the Intial Wishlist Application in order to continue with this program. " + "\nIf the wrong item showed up please redo the input in the Intial Wishlist Application.");
 
 			System.exit(0);

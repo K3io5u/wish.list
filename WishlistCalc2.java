@@ -65,7 +65,8 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else if (payRate.equals("bi-weekly")) {
+			}
+			else if (payRate.equals("bi-weekly")) {
 				System.out.println("Okay and how much do you make every 2 weeks?");
 				income = in.nextDouble();//taking the input for how much the user makes every two weeks
 
@@ -78,13 +79,15 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else {
+			}
+			else {
 				System.out.println();
 				System.out.println("I'm sorry I can't understand what you entered. Goodbye.");
 
 				System.exit(0);
 			}
-		} else if (choice.equals("2")) {
+		}
+		else if (choice.equals("2")) {
 			itemName = WishlistAccess.item_name2;//what you want declared by the global variable based on the database
 			itemCost = WishlistAccess.item_cost2;//how much it is declared by the global variable based on the database
 
@@ -94,7 +97,7 @@ public class WishlistCalc2 extends WishlistMain {
 			System.out.println("Okay we will do calculations for " + itemName + " then.");
 
 			System.out.println();
-			System.out.println(" Okay and from all of that we can gather that so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
+			System.out.println("Okay and from all of that we can gather that so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
 			System.out.println();//restating how much money the user has and how much more they need for the item
 
 			System.out.println("Now we can start the calculations for " + itemName + ".");
@@ -117,7 +120,8 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else if (payRate.equals("bi-weekly")) {
+			}
+			else if (payRate.equals("bi-weekly")) {
 				System.out.println("Okay and how much do you make every 2 weeks?");
 				income = Double.parseDouble(in.nextLine());//taking the input for how much the user makes every two weeks
 
@@ -130,13 +134,15 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else {
+			}
+			else {
 				System.out.println();
 				System.out.println("I'm sorry I can't understand what you entered. Goodbye.");
 
 				System.exit(0);
 			}
-		} else if (choice.equals("3")) {
+		}
+		else if (choice.equals("3")) {
 			itemName = WishlistAccess.item_name3;//what you want declared by the global variable based on the database
 			itemCost = WishlistAccess.item_cost3;//how much it is declared by the global variable based on the database
 
@@ -146,7 +152,7 @@ public class WishlistCalc2 extends WishlistMain {
 			System.out.println("Okay we will do calculations for " + itemName + " then.");
 
 			System.out.println();
-			System.out.println(" Okay and from all of that we can gather that so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
+			System.out.println("Okay and from all of that we can gather that so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
 			System.out.println();//restating how much money the user has and how much more they need for the item
 
 			System.out.println("Now we can start the calculations for " + itemName + ".");
@@ -169,7 +175,8 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else if (payRate.equals("bi-weekly")) {
+			}
+			else if (payRate.equals("bi-weekly")) {
 				System.out.println("Okay and how much do you make every 2 weeks?");
 				income = Double.parseDouble(in.nextLine());//taking the input for how much the user makes every two weeks
 
@@ -182,13 +189,15 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else {
+			}
+			else {
 				System.out.println();
 				System.out.println("I'm sorry I can't understand what you entered. Goodbye.");
 
 				System.exit(0);
 			}
-		} else if (choice.equals("4")) {
+		}
+		else if (choice.equals("4")) {
 			itemName = WishlistAccess.item_name4;//what you want declared by the global variable based on the database
 			itemCost = WishlistAccess.item_cost4;//how much it is declared by the global variable based on the database
 
@@ -198,7 +207,7 @@ public class WishlistCalc2 extends WishlistMain {
 			System.out.println("Okay we will do calculations for " + itemName + " then.");
 
 			System.out.println();
-			System.out.println(" Okay and from all of that we can gather that so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
+			System.out.println("Okay and from all of that we can gather that so far you have " + moneyBank + " dollars. And you need " + moneyNeed + " dollars more in order to get " + itemName + ".");
 			System.out.println();//restating how much money the user has and how much more they need for the item
 
 			System.out.println("Now we can start the calculations for " + itemName + ".");
@@ -221,7 +230,8 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else if (payRate.equals("bi-weekly")) {
+			}
+			else if (payRate.equals("bi-weekly")) {
 				System.out.println("Okay and how much do you make every 2 weeks?");
 				income = Double.parseDouble(in.nextLine());//taking the input for how much the user makes every two weeks
 
@@ -234,7 +244,8 @@ public class WishlistCalc2 extends WishlistMain {
 				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Access Calculator!");
-			} else {
+			}
+			else {
 				System.out.println();
 				System.out.println("I'm sorry I can't understand what you entered. Goodbye.");
 

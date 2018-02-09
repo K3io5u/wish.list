@@ -43,7 +43,8 @@ public class WishlistDatabase extends WishlistMain {
 			out.println(itemCost);//stores the original itemCost to file
 
 			System.out.println("Item Stored in " + fileName);
-		} else if (confirm.equals("no")) {
+		}
+		else if (confirm.equals("no")) {
 			System.out.println();
 			System.out.println("Okay, that item shall not be saved, you will be directed to the rest of the database now.");
 		}
@@ -102,11 +103,13 @@ public class WishlistDatabase extends WishlistMain {
 					System.out.println();
 					System.out.println("All of your items were stored under " + fileName + ".txt! Thank you very much for using Wishlist Database!");
 				}
-			} else if (confirm2.equals("no")) {
+			}
+			else if (confirm2.equals("no")) {
 				System.out.println();
 				System.out.println("Okay, thank you for using Wishlist Database! All items (if any) have been stored!");
 			}
-		} else if (confirm1.equals("no")) {
+		}
+		else if (confirm1.equals("no")) {
 			System.out.println();
 			System.out.println("Okay, thank you for using Wishlist Database! All items (if any) have been stored!");
 		}

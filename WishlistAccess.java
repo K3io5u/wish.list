@@ -28,17 +28,62 @@ public class WishlistAccess extends WishlistMain {
 		File text = new File("C:\\Users\\lavoiet2\\Downloads\\Coding\\WishlistDatabaseFiles\\" + fileName);
 		Scanner scnr = new Scanner(text);
 
-		itemName1 = scnr.nextLine();
+		if (scnr.hasNextLine()) {
+            itemName1 = scnr.nextLine();
 
-		itemCost1 = Double.parseDouble(scnr.nextLine());
+            itemCost1 = Double.parseDouble(scnr.nextLine());
 
-		System.out.println();
-		System.out.println("The first item retrieved was '" + itemName1 + "' and it costs " + itemCost1 + " dollars.");
+            System.out.println();
+            System.out.println("The first item retrieved was '" + itemName1 + "' and it costs " + itemCost1 + " dollars.");
 
-		item_name1 = itemName1;
-		item_cost1 = itemCost1;
+            item_name1 = itemName1;
+            item_cost1 = itemCost1;
+        }
 
-		//TODO make it so the scanner can read for more than just one item and finish class setup
+        if (scnr.hasNextLine()) {
+            itemName2 = scnr.nextLine();
+
+            itemCost2 = Double.parseDouble(scnr.nextLine());
+
+            System.out.println();
+            System.out.println("The second item retrieved was '" + itemName2 + "' and it costs " + itemCost2 + " dollars.");
+
+            item_name2 = itemName2;
+            item_cost2 = itemCost2;
+        }
+        else {
+		    System.out.println();
+		    System.out.print("No more items were listed, file fully accessed.");
+        }
+
+        if (scnr.hasNextLine()) {
+		    itemName3 = scnr.nextLine();
+
+		    itemCost3 = Double.parseDouble(scnr.nextLine());
+
+		    System.out.println();
+		    System.out.println("The third item retrieved was '" + itemName3 + "' and it costs " + itemCost3 + " dollars");
+
+		    item_name3 = itemName3;
+		    item_cost3 = itemCost3;
+        }
+        else {
+            System.out.println();
+            System.out.print("No more items were listed, file fully accessed.");
+        }
+
+        if (scnr.hasNextLine()) {
+		    itemName4 = scnr.nextLine();
+
+		    itemCost4 = Double.parseDouble(scnr.nextLine());
+
+		    System.out.println();
+		    System.out.println("The fourth item retrieved was '" + itemName4 + "' and it costs " + itemCost4 + " dollars");
+        }
+        else {
+            System.out.println();
+            System.out.print("No more items were listed, file fully accessed.");
+        }
 
 		scnr.close();
 	}
