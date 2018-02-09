@@ -22,65 +22,68 @@ public class WishlistAccess extends WishlistMain {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println();
-		System.out.println("Please enter your file name: ");
-		fileName = input.nextLine();
+		System.out.println("Please enter your file name: ");//askes the user for the name of their database file
+		fileName = input.nextLine();//sets the variable to the inputted file name
 
-		File text = new File("C:\\Users\\lavoiet2\\Downloads\\Coding\\WishlistDatabaseFiles\\" + fileName);
+		File text = new File("C:\\Users\\lavoiet2\\Downloads\\Coding\\WishlistDatabaseFiles\\" + fileName);//sets the path of what file to read
 		Scanner scnr = new Scanner(text);
 
-		if (scnr.hasNextLine()) {
-            itemName1 = scnr.nextLine();
+		if (scnr.hasNextLine()) { //tests if the file has lines written
+            itemName1 = scnr.nextLine();//sets the first string in the file as the name of the item
 
-            itemCost1 = Double.parseDouble(scnr.nextLine());
+            itemCost1 = Double.parseDouble(scnr.nextLine());//sets the next line and first double of the file to the cost of the item
 
             System.out.println();
             System.out.println("The first item retrieved was '" + itemName1 + "' and it costs " + itemCost1 + " dollars.");
 
-            item_name1 = itemName1;
-            item_cost1 = itemCost1;
+            item_name1 = itemName1;//sets the global variable equal to the local variable
+            item_cost1 = itemCost1;//sets the global variable equal to the local variable
         }
 
-        if (scnr.hasNextLine()) {
-            itemName2 = scnr.nextLine();
+        if (scnr.hasNextLine()) { //tests if the file has any more lines written
+            itemName2 = scnr.nextLine();//sets the second string in the file as the name of the second item
 
-            itemCost2 = Double.parseDouble(scnr.nextLine());
+            itemCost2 = Double.parseDouble(scnr.nextLine());//sets the second double in the file as the cost of the item
 
             System.out.println();
             System.out.println("The second item retrieved was '" + itemName2 + "' and it costs " + itemCost2 + " dollars.");
 
-            item_name2 = itemName2;
-            item_cost2 = itemCost2;
+            item_name2 = itemName2;//sets the global variable equal to the local variable
+            item_cost2 = itemCost2;//sets the global variable equal to the local variable
         }
-        else {
+        else { //prints a statement if there are no further items found
 		    System.out.println();
 		    System.out.print("No more items were listed, file fully accessed.");
         }
 
-        if (scnr.hasNextLine()) {
-		    itemName3 = scnr.nextLine();
+        if (scnr.hasNextLine()) { //tests if the file has any more lines written
+		    itemName3 = scnr.nextLine();//sets the third string in the file as the name of the third item
 
-		    itemCost3 = Double.parseDouble(scnr.nextLine());
+		    itemCost3 = Double.parseDouble(scnr.nextLine());//sets the third double in the file as the cost of the item
 
 		    System.out.println();
 		    System.out.println("The third item retrieved was '" + itemName3 + "' and it costs " + itemCost3 + " dollars");
 
-		    item_name3 = itemName3;
-		    item_cost3 = itemCost3;
+		    item_name3 = itemName3;//sets the global variable equal to the local variable
+		    item_cost3 = itemCost3;//sets the global variable equal to the local variable
         }
-        else {
+        else { //prints a statement if there are no further items found
             System.out.println();
             System.out.print("No more items were listed, file fully accessed.");
         }
 
-        if (scnr.hasNextLine()) {
-		    itemName4 = scnr.nextLine();
+        if (scnr.hasNextLine()) { //tests if the file has any more lines written
+		    itemName4 = scnr.nextLine();//sets the fourth string in the file sa the name of the fourth item
 
-		    itemCost4 = Double.parseDouble(scnr.nextLine());
+		    itemCost4 = Double.parseDouble(scnr.nextLine());//sets the fourth double in the file as the cost of the item
 
 		    System.out.println();
 		    System.out.println("The fourth item retrieved was '" + itemName4 + "' and it costs " + itemCost4 + " dollars");
+
+		    item_name4 = itemName4;//sets the the global variable equal to the local variable
+		    item_cost4 = itemCost4;//sets the global variable equal to the local variable
         }
-        else {
+        else { //prints a statement if there are no further items found
             System.out.println();
             System.out.print("No more items were listed, file fully accessed.");
         }
