@@ -3,6 +3,7 @@ package wish.list;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
+import java.io.File;
 
 public class WishlistDatabase extends WishlistMain {
 	public static String file_name;//public variable for the name of the user's file
@@ -12,8 +13,6 @@ public class WishlistDatabase extends WishlistMain {
 	}
 
 	public void Database() throws FileNotFoundException {
-		//TODO Account for and catch already existing file names
-
 		String itemName, itemName1, itemName2, itemName3;
 		double itemCost, itemCost1, itemCost2, itemCost3;
 		String confirm, confirm1, confirm2, confirm3;
@@ -28,7 +27,18 @@ public class WishlistDatabase extends WishlistMain {
 		System.out.println("What would you like to name your database?");
 		fileName = reader.nextLine();//asking the user to name the file that will be created
 
-		PrintWriter out = new PrintWriter("C:\\Users\\lavoiet2\\Downloads\\Coding\\WishlistDatabaseFiles\\" + fileName);//sets the destination for the file created and creates the printwriter object
+        File f = new File("C:\\Users\\lavoiet2\\Downloads\\Coding\\WishlistDatabaseFiles\\" + fileName);
+        if(f.exists() && !f.isDirectory()) {
+
+            do {
+                System.out.println();
+                System.out.println("That file name already exists, please enter another name.");
+                fileName = reader.nextLine();
+            }
+            while (f.exists() && f.isDirectory());
+        }
+
+        PrintWriter out = new PrintWriter("C:\\Users\\lavoiet2\\Downloads\\Coding\\WishlistDatabaseFiles\\" + fileName);//sets the destination for the file created and creates the printwriter object
 
 		file_name = fileName;//sets the global file_name variable to the local fileName variable
 
