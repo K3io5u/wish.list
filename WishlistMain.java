@@ -11,7 +11,6 @@ public class WishlistMain {
 	}
 
 	public static void main(String[] args) {
-        //TODO Finish commenting all present code in all classes
 
 		try {
 			double moneyBank, itemCost, moneyNeed;

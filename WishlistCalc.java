@@ -8,13 +8,13 @@ public class WishlistCalc extends WishlistMain {
 		super();
 	}
 
+	@SuppressWarnings("Duplicates")
 	public void Calc() {
 		//public method that holds all the calculations and prints for the WishlistCalc class
 
-        //TODO Adjust and add into class to account for monthly expenses and such
-
 		double income, weeksTill, moneyNeed, moneyBank;
 		String payRate, itemName, confirm;
+		double dis_income, max_dis;
 
 		Scanner input = new Scanner(System.in);
 
@@ -45,12 +45,23 @@ public class WishlistCalc extends WishlistMain {
 
 				System.out.println("Okay so if you make " + income + " dollars a week, and you need " + moneyNeed + ". Then we can calculate how long you still have to save for.");
 
-				weeksTill = (moneyNeed / income);//calculating how many weeks it takes till the user can get the item
+				System.out.println();
+				System.out.println("How much disposable income do you have?");//asks the user for their disposable income
+				dis_income = input.nextDouble();//saves that input
+
+				System.out.println();
+				System.out.println("How much of that disposable income would you like to put towards " + itemName + " each week?");//asks the user how much they would like to put towards the item
+				max_dis = input.nextDouble();//saves the input
+
+				System.out.println();
+				System.out.println("Okay so you make " + income + " every week and you are able to spend " + dis_income + " each week and plan to put away " + max_dis + " every week towards " + itemName + ".");
+
+				weeksTill = (moneyNeed / max_dis);//calculating how many weeks it takes till the user can get the item
 				System.out.println();
 				System.out.println("Calculating...");
 
 				System.out.println();
-				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
+				System.out.println("Okay so if you want to continue saving for " + itemName + " with the set amount of " + max_dis + " being put away each week, then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
 			}
@@ -60,16 +71,25 @@ public class WishlistCalc extends WishlistMain {
 
 				System.out.println("Okay so if you make " + income + " dollars every 2 weeks, and you need " + moneyNeed + ". " + "Then we can calculate how long you still have to save for.");
 
-				weeksTill = (moneyNeed / income) / 2;//calculating how many weeks it takes till the user can get the item
+                System.out.println();
+                System.out.println("How much disposable income do you have?");//asks the user for their disposable income
+                dis_income = input.nextDouble();//saves the input
+
+                System.out.println();
+                System.out.println("How much of that disposable income would you like to put towards " + itemName + " every two weeks?");//asks the user how much they would like to put towards the item
+                max_dis = input.nextDouble();//saves the input
+
+                System.out.println();
+                System.out.println("Okay so you make " + income + " every two weeks and you are able to spend about " + dis_income + " each pay period and plan to put away about " + max_dis + " every other week towards " + itemName + ".");
+
+				weeksTill = (moneyNeed / max_dis) / 2;//calculating how many weeks it takes till the user can get the item
 				System.out.println();
 				System.out.println("Calculating...");
 
 				System.out.println();
-				System.out.println("Okay so if you want to continue saving for " + itemName + " then you will need to save for about " + weeksTill + " more weeks!");
+				System.out.println("Okay so if you want to continue saving for " + itemName + " with the set amount of " + max_dis + " being put away every two weeks, then you will need to save for about " + weeksTill + " more weeks!");
 				System.out.println();
 				System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
-
-
 			}
 			else {
 				System.out.println();

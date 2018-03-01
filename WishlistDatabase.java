@@ -13,6 +13,8 @@ public class WishlistDatabase extends WishlistMain {
 	}
 
 	public void Database() throws FileNotFoundException {
+	    //TODO Make a loop/array of storing more values
+
 		String itemName, itemName1, itemName2, itemName3;
 		double itemCost, itemCost1, itemCost2, itemCost3;
 		String confirm, confirm1, confirm2, confirm3;
@@ -28,8 +30,8 @@ public class WishlistDatabase extends WishlistMain {
 		fileName = reader.nextLine();//asking the user to name the file that will be created
 
         File f = new File("C:\\Users\\lavoiet2\\Downloads\\Coding\\WishlistDatabaseFiles\\" + fileName);
-        if(f.exists() && !f.isDirectory()) {
-
+        if(f.exists() && !f.isDirectory()) { //if statement to check if the file name entered already exists
+                                             //sends the user into a do-while loop until they enter a file name that doesn't already exist
             do {
                 System.out.println();
                 System.out.println("That file name already exists, please enter another name.");
