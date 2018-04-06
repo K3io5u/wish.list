@@ -3,46 +3,50 @@ package wish.list;
 import java.util.Scanner;
 
 public class WishlistInitial extends WishlistMain {
-	public static String item_name; //public variable for what the user wants
-	public static double item_cost; //public variable for how much the item costs
+	public static String item_name;
+	public static double item_cost;
+	public static double money_bank;
 
 	public WishlistInitial() {
 		super();
 	}
 
-	public void Welcome() {
-		//public method for a greeting to the program
+    public void welcome() {
+        System.out.println("Welcome to Wishlist!");
+        System.out.println();
+    }
 
-		System.out.println("Welcome to Wishlist!");
-		System.out.println();
+    public String name(Scanner input) {
+        String itemName;
 
-	}
+        System.out.println("What is it you are saving for? ");
+        itemName = input.nextLine();
 
-	public String ItemName(Scanner input) {
-		//public method to store what the user wants to get
+        item_name = itemName;
 
-		String itemName;
+        return itemName;
+    }
 
-		System.out.println("What is it you are saving for? ");
-		itemName = input.nextLine();
+    public double cost(Scanner input) {
+        double itemCost;
+        String itemName = item_name;
 
-		item_name = itemName;
+        System.out.println("How much is " + itemName + "?");
+        itemCost = Double.parseDouble(input.nextLine());
 
-		return itemName;
-	}
+        item_cost = itemCost;
 
-	public double ItemCost(Scanner input) {
-		//public method to store how much the item is
+        return itemCost;
+    }
 
-		double itemCost;
-		String itemName = item_name;
+    public double bank(Scanner input) {
+        double moneyBank;
 
-		System.out.println("How much is " + itemName + "?");
-		itemCost = Double.parseDouble(input.nextLine());
+        System.out.println("Enter the amount of money you have saved: ");
+        moneyBank = Double.parseDouble(input.nextLine());
 
-		item_cost = itemCost;
+        money_bank = moneyBank;
 
-		return itemCost;
-	}
-
+        return moneyBank;
+    }
 }
