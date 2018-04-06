@@ -3,11 +3,11 @@ package wish.list;
 import java.util.Scanner;
 
 public class WishlistInitial extends WishlistMain {
-	public static String item_name;
-	public static double item_cost;
-	public static double money_bank;
+	static String item_name;
+	static double item_cost;
+	static double money_bank;
 
-	public WishlistInitial() {
+	WishlistInitial() {
 		super();
 	}
 
@@ -16,18 +16,16 @@ public class WishlistInitial extends WishlistMain {
         System.out.println();
     }
 
-    public String name(Scanner input) {
+    public void name(Scanner input) {
         String itemName;
 
         System.out.println("What is it you are saving for? ");
         itemName = input.nextLine();
 
         item_name = itemName;
-
-        return itemName;
     }
 
-    public double cost(Scanner input) {
+    public void cost(Scanner input) {
         double itemCost;
         String itemName = item_name;
 
@@ -35,18 +33,14 @@ public class WishlistInitial extends WishlistMain {
         itemCost = Double.parseDouble(input.nextLine());
 
         item_cost = itemCost;
-
-        return itemCost;
     }
 
-    public double bank(Scanner input) {
+    public void bank(Scanner input) {
         double moneyBank;
 
         System.out.println("Enter the amount of money you have saved: ");
         moneyBank = Double.parseDouble(input.nextLine());
 
         money_bank = moneyBank;
-
-        return moneyBank;
     }
 }

@@ -2,7 +2,7 @@ package wish.list;
 
 public class WishlistCalc extends WishlistMain {
 
-	public WishlistCalc() {
+	WishlistCalc() {
 		super();
 	}
 
@@ -29,7 +29,7 @@ public class WishlistCalc extends WishlistMain {
             System.out.println("Could you start by stating whether you get paid weekly or bi-weekly?");
             payRate = input.nextLine();
 
-            if (payRate.equals("weekly")) {
+            if ("weekly".equals(payRate)) {
                 System.out.println("Okay and how much do you make per week?");
                 income = Double.parseDouble(input.nextLine());
 
@@ -54,7 +54,7 @@ public class WishlistCalc extends WishlistMain {
                 System.out.println();
                 System.out.println("Good luck on your saving! Thank you for utilizing Wishlist Calculator!");
             }
-            else if (payRate.equals("bi-weekly")) {
+            else if ("bi-weekly".equals(payRate)) {
                 System.out.println("Okay and how much do you make every 2 weeks?");
                 income = Double.parseDouble(input.nextLine());
 

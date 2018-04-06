@@ -2,7 +2,7 @@ package wish.list;
 
 public class WishlistDataCalc extends WishlistMain{
 
-    public WishlistDataCalc() {
+    WishlistDataCalc() {
         super();
     }
 
@@ -12,6 +12,7 @@ public class WishlistDataCalc extends WishlistMain{
         double dis_in, max_dis;
         int i = 0;
 
+        System.out.println();
         System.out.println("Hello and welcome to the Wishlist Access Calculator where you can calculate how long it will take you to get items from your Database file!");
         System.out.println();
         System.out.println("First off we have to find out how much money you have for the item you want. So we shall start there.");
@@ -43,7 +44,7 @@ public class WishlistDataCalc extends WishlistMain{
             System.out.println("Alright, could you start by stating whether you get paid weekly or bi-weekly?");
             payRate = input.next();
 
-            if (payRate.equals("weekly")) {
+            if ("weekly".equals(payRate)) {
                 System.out.println("Okay and how much do you make per week?");
                 income = Double.parseDouble(input.nextLine());
 
@@ -69,7 +70,7 @@ public class WishlistDataCalc extends WishlistMain{
                 System.out.println("Good luck on your saving! Would you like to calculate another item in your file (if one is present)? (yes/no)");
                 confirm = input.nextLine();
             }
-            else if (payRate.equals("bi-weekly")) {
+            else if ("bi-weekly".equals(payRate)) {
                 System.out.println("Okay and how much do you make every 2 weeks?");
                 income = Double.parseDouble(input.nextLine());
 

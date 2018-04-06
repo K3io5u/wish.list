@@ -5,10 +5,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class WishlistAccess extends WishlistMain {
-    public static String[] item = new String[100];
-    public static double[] cost = new double[100];
+    static String[] item = new String[100];
+    static double[] cost = new double[100];
 
-	public WishlistAccess() {
+	WishlistAccess() {
 		super();
 	}
 

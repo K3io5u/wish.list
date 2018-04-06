@@ -4,10 +4,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class WishlistMain {
-	public static double money_need;
-	public static Scanner input = new Scanner(System.in);
+	static double money_need;
+    static Scanner input = new Scanner(System.in);
 
-	public WishlistMain() {
+	WishlistMain() {
 
 	}
 

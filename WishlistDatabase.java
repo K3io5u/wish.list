@@ -2,11 +2,11 @@ package wish.list;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.io.File;
 
 public class WishlistDatabase extends WishlistMain {
-	public static String file_name;
 
-	public WishlistDatabase() {
+	WishlistDatabase() {
 		super();
 	}
 
@@ -15,14 +15,21 @@ public class WishlistDatabase extends WishlistMain {
         double[] cost = new double[100];
         String confirm, fileName;
         int i = 1;
-        int j = 0;
 
+        System.out.println();
         System.out.println("Hello! Welcome to the Wishlist Database!");
         System.out.println();
         System.out.println("What would you like to name your database?");
         fileName = input.nextLine();
 
-        file_name = fileName;
+        File fin = new File(fileName);
+
+        if (fin.exists() && !fin.isDirectory()) do {
+            System.out.println();
+            System.out.println("That file name already exists. Please enter another file name: ");
+            fileName = input.nextLine();
+        }
+        while (fin.exists() && !fin.isDirectory());
 
         PrintWriter out = new PrintWriter(fileName);
 
@@ -59,7 +66,7 @@ public class WishlistDatabase extends WishlistMain {
                 i++;
             }
         }
-        while (confirm.equals("yes") && j < item.length);
+        while (confirm.equals("yes"));
 
         System.out.println("Okay! Thank you for using Wishlist Database! All items (if any) have been stored!");
         System.out.println();
